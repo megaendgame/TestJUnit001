@@ -23,19 +23,35 @@ public class Calculadora {
     }
 
     public int Sumar() {
-        return this.num1 + this.num2;
+        if (this.num1 == 0 || this.num2 == 0) {
+            return 0;
+        } else {
+            return this.num1 + this.num2;
+        }
     }
 
     public int Restar() {
-        return this.num1 - this.num2;
+        if (this.num1 < this.num2) {
+            return 0;
+        } else {
+            return this.num1 - this.num2;
+        }
     }
 
     public int Multiplicar() {
-        return this.num1 * this.num2;
+        if (this.num2 == 0) {
+            return 1;
+        } else {
+            return this.num1 * this.num2;
+        }
     }
 
     public int Dividir() {
-        return this.num1 / this.num2;
+        if (this.num2 == 0) {
+            return 0;
+        } else {
+            return this.num1 / this.num2;
+        }
     }
 
     /*

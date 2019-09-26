@@ -6,6 +6,7 @@
 package modelo;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
 /**
@@ -17,10 +18,11 @@ public class TestMultiplicar {
     @Test
     public void testMultiplicar() {
         System.out.println("Multiplicar");
-        Calculadora instance = new Calculadora(8,2);
-        int expResult = 16;
+        Calculadora instance = new Calculadora(8,0);
+        int expResult = 1;
         int result = instance.Multiplicar();
         assertEquals(expResult, result);
+        //assertTrue(instance.Multiplicar()==0);
         
     }
     
